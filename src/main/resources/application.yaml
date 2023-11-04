@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: kafka-streams-playground
+  kafka:
+    streams:
+      properties:
+        default.key.serde: org.apache.kafka.common.serialization.Serdes$IntegerSerde
+        default.value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde

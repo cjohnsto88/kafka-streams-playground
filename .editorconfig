@@ -7,6 +7,9 @@ indent_size = 4
 indent_style = space
 insert_final_newline = false
 
+[*.yaml]
+indent_size = 2
+
 [*.java]
 ij_java_class_count_to_use_import_on_demand = 999
 ij_java_names_count_to_use_import_on_demand = 999

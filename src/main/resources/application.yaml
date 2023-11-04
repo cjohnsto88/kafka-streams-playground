@@ -1,8 +1,17 @@
 spring:
   application:
     name: kafka-streams-playground
+  batch:
+    job:
+      enabled: false
   kafka:
     streams:
       properties:
         default.key.serde: org.apache.kafka.common.serialization.Serdes$IntegerSerde
         default.value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+    consumer:
+      properties:
+        spring.json.trusted.packages: "com.craig.kafka.streams.playground.domain"
+  mvc:
+    format:
+      date: iso
